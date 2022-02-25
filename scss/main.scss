@@ -8,6 +8,7 @@
 }
 $blue: #225687;
 
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 
 @mixin heading() {
     font-size: 3rem;
@@ -150,6 +151,7 @@ body{
             top: 5.2rem;
         }
     }
+
     .about{
         .row{
             .info{
@@ -604,6 +606,63 @@ body{
     filter: brightness(100%);
     transform: scale(1.3);
 
-    border-radius: .5rem;
+}
 
-} 
+
+
+
+
+
+
+
+
+
+.pontainer{
+    display: grid;
+    place-items: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 10000;
+    position: relative;
+
+    .wrap{
+        /* display: grid;
+        place-items: center; */
+        background: #000;
+        height: 15rem;
+        width: 15rem;
+
+        .boba{
+            height: 15rem;
+            width: 15rem;
+            border-radius: 50%;
+            border-right: .3rem solid #fff;
+            animation: rot 2s linear infinite;
+            position: absolute;
+        }
+        .hah1{
+            font-size: 4rem;
+            color: aliceblue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-family: 'Redressed' !important;
+        
+        
+        }
+        
+    }
+}
+
+
+@keyframes rot {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

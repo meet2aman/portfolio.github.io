@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -135,6 +136,14 @@ body {
   }
   .header .nav-toggle {
     top: 5.2rem;
+  }
+  .about .row .info h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0rem;
+    font-size: 1.5rem;
+  }
+  .about .row .info .typing-text1 {
+    font-size: 2.2rem;
   }
 }
 
@@ -681,6 +690,70 @@ body {
           filter: brightness(100%);
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
-  border-radius: .5rem;
+}
+
+.pontainer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 10000;
+  position: relative;
+}
+
+.pontainer .wrap {
+  /* display: grid;
+        place-items: center; */
+  background: #000;
+  height: 15rem;
+  width: 15rem;
+}
+
+.pontainer .wrap .boba {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  border-right: .3rem solid #fff;
+  -webkit-animation: rot 2s linear infinite;
+          animation: rot 2s linear infinite;
+  position: absolute;
+}
+
+.pontainer .wrap .hah1 {
+  font-size: 4rem;
+  color: aliceblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'Redressed' !important;
+}
+
+@-webkit-keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=main.css.map */

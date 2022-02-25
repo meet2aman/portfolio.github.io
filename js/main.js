@@ -102,3 +102,17 @@ var typed = new Typed('.typing-text2', {
     typeSpeed:120,
     loop:true,
   });
+
+
+ 
+
+
+
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load" , function(){
+    loader.style.display = "none";
+});
+  
+
+console.log("Hii This Is Me Aman.")
